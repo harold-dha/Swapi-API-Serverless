@@ -1,0 +1,17 @@
+service: api-swapi
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action: 
+        - dynamodb:*
+      Resource:
+        - arn:aws:dynamodb:us-east-2:887042794657:table/Personas
+
+functions: ${file(config/serverless/functions.local.yml)}
+resources: ${file(config/serverless/resources.local.yml)}
+

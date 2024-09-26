@@ -1,0 +1,22 @@
+swapi:
+  handler: src/index.handler.getPersonas
+  name: UE2COMLMBGDCSWAPI003
+  description: SERVICIO SWAPI - GET PERSONAS
+  events:
+    - httpApi:
+        path: /swapi/getpersonas
+        method: GET
+        # integration: lambda
+        # request:
+          # template:
+          # application/json: ${file(config/serverless/request/getPersona.vm)}
+
+agregarPersona:
+  handler: src/index.handler.addPersona
+  name: UE2COMLMBGDCSWAPI004
+  description: SERVICIO SWAPI - ADD PERSONA
+  events:          
+    - httpApi:
+        path: /swapi/addpersona
+        method: POST
+

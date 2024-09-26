@@ -1,0 +1,23 @@
+{
+  "name": "api-swapi",
+  "version": "1.0.0",
+  "description": "<!-- title: 'AWS Simple HTTP Endpoint example in NodeJS' description: 'This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.' layout: Doc framework: v3 platform: AWS language: nodeJS authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.1488.0",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "jest-cucumber": "^3.0.1"
+  },
+  "scripts": {
+    "test": "jest --coverage --logHeapUsage"
+  },
+  "author": "DWIGHT YONTOP",
+  "license": "ISC"
+}
+
